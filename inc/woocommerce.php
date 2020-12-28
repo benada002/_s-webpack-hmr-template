@@ -43,7 +43,7 @@ add_action( 'after_setup_theme', 'replace_function_slug_woocommerce_setup' );
  * @return void
  */
 function replace_function_slug_woocommerce_scripts() {
-	wp_enqueue_style( 'replace-prefix-handles-woocommerce-style', get_template_directory_uri() . '/woocommerce.css', array(), REPLACE_CONSTANTS_VERSION );
+	wp_enqueue_style( 'replace-prefix-handles-woocommerce-style', get_template_directory_uri() . '/build/woocommerce.css', array(), REPLACE_CONSTANTS_VERSION );
 
 	$font_path   = WC()->plugin_url() . '/assets/fonts/';
 	$inline_font = '@font-face {

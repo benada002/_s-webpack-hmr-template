@@ -1,3 +1,3 @@
-//import './lib/navigation';
+import './lib/navigation';
 
 import '../styles/style.scss';

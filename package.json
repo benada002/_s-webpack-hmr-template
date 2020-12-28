@@ -1,7 +1,7 @@
 {
   "name": "underscoreswebpackhmrtemplate",
   "version": "1.0.0",
-  "author": "benada002, Automattic Theme Team",
+  "author": "benada002",
   "license": "GPL-2.0-or-later",
   "keywords": [
     "WordPress",
@@ -55,10 +55,9 @@
   "scripts": {
     "start": "webpack serve -c ./config/webpack.config.dev.js",
     "production": "webpack -c ./config/webpack.config.prod.js",
-    "compile:css": "node-sass sass/ -o ./ && stylelint '*.css' --fix || true && stylelint '*.css' --fix",
-    "compile:rtl": "rtlcss style.css style-rtl.css",
-    "lint:scss": "wp-scripts lint-style 'sass/**/*.scss'",
-    "lint:js": "wp-scripts lint-js 'js/*.js'",
+    "compile:rtl": "npm run production && rtlcss ./build/style.css ./build/style-rtl.css",
+    "lint:scss": "wp-scripts lint-style 'src/styles/**/*.scss'",
+    "lint:js": "wp-scripts lint-js 'src/js/**/*.js'",
     "bundle": "dir-archiver --src . --dest ../theme.zip --exclude .DS_Store .stylelintrc.json .eslintrc .git .gitattributes .github .gitignore README.md composer.json composer.lock node_modules vendor package-lock.json package.json .travis.yml phpcs.xml.dist sass style.css.map"
   },
   "dependencies": {
