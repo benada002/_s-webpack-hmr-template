@@ -2,6 +2,7 @@
 
 _s-webpack-hmr-template
 ===
+(_s) undercores but with webpack and hot-module-reloading.
 
 This project is based on (_s) undercores from Automattic: https://github.com/Automattic/_s.
 
