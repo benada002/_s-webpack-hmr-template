@@ -1,0 +1,13 @@
+{
+    "entry": {
+        "frontend": [
+            "./js/frontend.js"
+        ],
+        "woocommerce": [
+            "./styles/woocommerce.scss"
+        ]
+    },
+    "wpHost": {
+        "host": "gl.localhost"
+    }
+}
